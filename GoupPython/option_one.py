@@ -15,7 +15,7 @@ def OptionOne():
 
     # Open the defaults file and read the values into variables
 
-    f = open('Defaults.dat', 'r')
+    f = open('../DataFiles/Defaults.dat', 'r')
 
     NextTransNum = int(f.readline())
     NextDriverNum = int(f.readline())
@@ -138,7 +138,7 @@ def OptionOne():
 
         EmpFullAdd = (f"{EmpAdd},{EmpCity},{EmpProv},{EmpPost}")
 
-        f = open("Employees.dat", "a")
+        f = open("../DataFiles/Employees.dat", "a")
 
         f.write("{}, ".format(str(NextDriverNum)))
         f.write("{}, ".format(EmpFirstName))
@@ -166,7 +166,7 @@ def OptionOne():
 
         NextDriverNum += 1
 
-        f = open('Defaults.dat', 'w')
+        f = open('../DataFiles/Defaults.dat', 'w')
 
         f.write("{}\n".format(str(NextTransNum)))
         f.write("{}\n".format(str(NextDriverNum)))
@@ -190,7 +190,7 @@ def OptionOne():
 
     EmpCtr = 0
 
-    f = open('Employees.dat', "r")
+    f = open('../DataFiles/Employees.dat', "r")
 
     for EmployeeDataLine in f:
 

@@ -7,7 +7,9 @@
 # Written date: August 18, 2023
 
 
-import Option1
+import option_one
+import financial_listing
+import car_status
 
 
 # Main menu program
@@ -32,8 +34,7 @@ while True:
 
     while True:
         try:
-            Selection = input(" Enter choice (1-9): ")
-            Selection = int(Selection)
+            Selection = int(input(" Enter choice (1-9): "))
         except:
             print(" Error - Invalid Input")
         else:
@@ -47,7 +48,7 @@ while True:
 # Determining output based on the users input.
 
     if Selection == 1:
-        Option1.OptionOne()
+        option_one.OptionOne()
     if Selection == 2:
         while True:
             print("Sorry this option is not available yet.")
@@ -75,14 +76,14 @@ while True:
             break
     if Selection == 7:
         while True:
-            print("Sorry this option is not available yet.")
-            BackToMenu = input("Press enter to return to menu.")
+            financial_listing.fiancial_listings()
             break
     if Selection == 8:
         while True:
-            print("Sorry this option is not available yet.")
-            BackToMenu = input("Press enter to return to menu.")
+            status = ['available','rented']
+            car_status.car_status_check(*status)
             break
+
     if Selection == 9:
         print("Thanks for using this program! Have a great day!")
         break

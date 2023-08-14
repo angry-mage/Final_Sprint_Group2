@@ -1,4 +1,4 @@
-#!C:\Users\vkamp\Desktop\QAP4\QAP-4-Files-VA\myenv\Scripts\python.exe
+#Description: This function prints out the Listings report to the user
 
 from datetime import datetime
 
@@ -24,9 +24,9 @@ def financial_listings():
             #reading each record and slicing elements and assigning elements to variables
             
             line = record.split(',')
-            transaction_id=line[0].strip() 
+            #transaction_id=line[0].strip()
             tran_date=line[1].strip()
-            description=line[2].strip()
+            #description=line[2].strip()
             driver_id=line[3].strip() 
             tran_amount=float(line[4].strip())
             hst=float(line[5].strip())

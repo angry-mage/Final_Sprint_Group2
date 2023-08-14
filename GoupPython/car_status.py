@@ -1,15 +1,15 @@
-#!C:\Users\vkamp\Desktop\QAP4\QAP-4-Files-VA\myenv\Scripts\python.exe
-
-from datetime import datetime
-
-
-def car_status_check(*args):   
+#Description: This function processes the cars data and prints out an exception
+# report based on car status (Available,Rented, Maintenance)
+def car_status_check(*args, **kwargs):
+    ''' Params args : tuples with elements matching a car status
+        Eg (rented,available)
+        you can any number of elements you want in the tuple and the report will filter cars with those status and print out'''
     print()
     print('HAB TAXI SERVICES CAR STATUS TRACKER ') 
     print()
     print('CAR          STATUS               MAKE        MODEL           YEAR')
     print('NUMBER') 
-    print('======================================================================')  
+    print('==================================================================')
 
     # Read revenues records from file
 
@@ -35,11 +35,8 @@ def car_status_check(*args):
                 total_cars +=1
             
                 # printing car status financial listings  
-                print(f'{car_number:<5}       {current_status:<20s} ${make:<10s} ${model:<9s}      ${year:<9s} ') 
-    print('======================================================================') 
+                print(f'{car_number:<5}       {current_status:<20s} {make:<10s}  {model:<9s}       {year:<9s} ')
+    print('==================================================================')
     print (f'Total CARS: {total_cars}' )          
     print()
- 
-if __name__ == '__main__':
-    status=['available']   
-    car_status_check(*status)
+

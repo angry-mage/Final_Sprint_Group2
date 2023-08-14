@@ -75,14 +75,12 @@ while True:
             BackToMenu = input("Press enter to return to menu.")
             break
     if Selection == 7:
-        while True:
-            financial_listing.fiancial_listings()
-            break
+        financial_listing.fiancial_listings()
+
     if Selection == 8:
-        while True:
-            status = ['available','rented']
-            car_status.car_status_check(*status)
-            break
+        status = ('available','rented')
+        car_status.car_status_check(*status)
+
 
     if Selection == 9:
         print("Thanks for using this program! Have a great day!")

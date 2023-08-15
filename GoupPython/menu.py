@@ -75,7 +75,7 @@ while True:
             BackToMenu = input("Press enter to return to menu.")
             break
     if Selection == 7:
-        financial_listing.fiancial_listings()
+        financial_listing.financial_listings()
 
     if Selection == 8:
         status = ('available','rented')

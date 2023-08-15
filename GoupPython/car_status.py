@@ -1,6 +1,6 @@
 #Description: This function processes the cars data and prints out an exception
 # report based on car status (Available,Rented, Maintenance)
-def car_status_check(*args, **kwargs):
+def car_status_check(*args):
     ''' Params args : tuples with elements matching a car status
         Eg (rented,available)
         you can any number of elements you want in the tuple and the report will filter cars with those status and print out'''
@@ -26,10 +26,7 @@ def car_status_check(*args, **kwargs):
             model = line[2].strip()
             year = line[3].strip()
             current_status = line[4].strip().lower()
-            
-            # Incrementing accumulators
-            
-            
+
             # report cars that are available or rented
             if current_status in args:
                 total_cars +=1
@@ -39,4 +36,3 @@ def car_status_check(*args, **kwargs):
     print('==================================================================')
     print (f'Total CARS: {total_cars}' )          
     print()
-

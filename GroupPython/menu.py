@@ -1,4 +1,4 @@
-# A Program Design for HAB Taxi Services
+# Description: A Program Designed for HAB Taxi Services
 # Main Menu created by: John Limon
 # Option 1 created by: Jelliebeth Sevilla
 # Option _ created by:

@@ -2,8 +2,11 @@
 # report based on car status (Available,Rented, Maintenance)
 def car_status_check(*args):
     ''' Params args : tuples with elements matching a car status
-        Eg (rented,available)
-        you can any number of elements you want in the tuple and the report will filter cars with those status and print out'''
+        Eg param values :
+        (rented,available) to return cars that are rented or available
+        (rented,) to return cars that are rented
+        (maintenance,) to return cars that are in maintenance
+        you can add any number of elements you want in the tuple and the report will filter cars with those status and print out'''
     print()
     print('HAB TAXI SERVICES CAR STATUS TRACKER ') 
     print()

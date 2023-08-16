@@ -1,9 +1,10 @@
 # Description: A Program Designed for HAB Taxi Services
 # Main Menu created by: John Limon
 # Option 1 created by: Jelliebeth Sevilla
-# Option _ created by:
-# Option _ created by:
-# Option _ created by:
+# Option 7 created by: Valentine Ampah
+# Option 8 created by: Valentine Ampah
+# Option 9 created by: John Limon
+# Debugging and Data files added by: Ashley Colbert and Jay Eagles
 # Written date: August 18, 2023
 
 
